@@ -1,0 +1,157 @@
+/* Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1f26, #3a3d4d);
+  color: #f1f1f1;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Glassmorphic Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.4s ease;
+}
+.container:hover {
+  transform: scale(1.01);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00eaff, #8d42fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #00eaff;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #00eaff, #8d42fb);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 234, 255, 0.3);
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(to right, #8d42fb, #00eaff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 234, 255, 0.5);
+}
+
+/* Navigation */
+nav {
+  margin-top: 30px;
+  text-align: center;
+}
+nav a, nav button {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.08);
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+nav a:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+/* Appliance List */
+ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+ul li {
+  background-color: rgba(255,255,255,0.07);
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+ul li button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Highlighted Values */
+#rec-kwh, #battery-size, #inverter-size {
+  font-weight: bold;
+  font-size: 20px;
+  color: #00eaff;
+}
+
+/* Link */
+a {
+  color: #00eaff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+}
